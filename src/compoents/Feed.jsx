@@ -10,9 +10,6 @@ const Feed = () => {
     <Box sx={{ p: 2 }} flex={2.6}>
       <LeaderBoard />
       <Add />
-
-      <Post />
-      <Post />
       <Post />
     </Box>
   );

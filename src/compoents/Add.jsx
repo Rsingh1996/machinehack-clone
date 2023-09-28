@@ -32,14 +32,13 @@ const Add = () => {
               width: 600,
               maxWidth: "100%",
               height: 50,
-              backgroundColor: "rgba(0, 7, 38, 0.56)", // Corrected color value
-              border: "none", // Added 'px' unit
+              backgroundColor: "rgba(0, 7, 38, 0.56)",
+              border: "none",
               borderRadius: 26,
             }}
             fullWidth
-            // borderRadius="40px"
             label="Start an AI-assisted discussion..."
-            placeholder="Start an AI-assisted discussion..."
+            placeholder="  Start an AI-assisted discussion..."
           />
         </StyledBase>
         <Box sx={{ display: "flex", justifyContent: "space-between", p: 2 }}>

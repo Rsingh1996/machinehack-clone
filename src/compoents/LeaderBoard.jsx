@@ -21,7 +21,6 @@ const LeaderBoard = () => {
         borderStyle: "solid",
         borderColor: "#263559",
         borderRadius: 2,
-        p: 1.5,
       }}
     >
       <StyledBase>
@@ -35,6 +34,7 @@ const LeaderBoard = () => {
             gap: 2,
             borderBottomLeftRadius: 19,
             borderBottomRightRadius: 19,
+            alignSelf: "center",
           }}
         >
           <img src="https://machinehack.com/static/media/leaderboard.6d3c652d.svg" />
@@ -44,7 +44,8 @@ const LeaderBoard = () => {
           sx={{
             display: "flex",
             flexDirection: "row",
-            justifyContent: "space-between",
+            justifyContent: "center",
+            gap: 4,
             flexWrap: "wrap",
             p: 2,
           }}
@@ -52,7 +53,7 @@ const LeaderBoard = () => {
           {Leaders.map((x) => (
             <Avatar
               key={x.id}
-              sx={{ bgcolor: "#445eb7", height: 75, width: 75 }}
+              sx={{ bgcolor: "#445eb7", height: 70, width: 70 }}
             >
               <img src={x.avatar} height={"75"} />
             </Avatar>

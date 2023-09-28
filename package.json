@@ -1,5 +1,6 @@
 {
-  "name": "https://rsingh1996.github.io/machinehack-clone",
+  "homepage": "https://rsingh1996.github.io/machinehack-clone/",
+  "name": "machinehack-clone",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

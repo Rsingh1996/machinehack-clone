@@ -1,9 +1,9 @@
 import { Box, Container, Stack } from "@mui/material";
-import Feed from "./compoents/Feed";
+import Feed from "./components.jsx/Feed";
 
-import Rightbar from "./compoents/Righbar";
-import Sidebar from "./compoents/Sidebar";
-import Navbar from "./compoents/Navbar";
+import Rightbar from "./components.jsx/Righbar";
+import Sidebar from "./components.jsx/Sidebar";
+import Navbar from "./components.jsx/Navbar";
 
 function App() {
   return (

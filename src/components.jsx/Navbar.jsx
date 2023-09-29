@@ -7,12 +7,17 @@ import {
   InputBase,
   Typography,
   Hidden,
+  IconButton,
 } from "@mui/material";
 import ApartmentOutlinedIcon from "@mui/icons-material/ApartmentOutlined";
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import SearchIcon from "@mui/icons-material/Search";
 import React from "react";
 import "./Header.css";
+import { useState } from "react";
+import Drawer from "@mui/material/Drawer";
+import MenuItems from "./MenuItems";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -60,10 +65,26 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     width: "100%",
   },
 }));
+
 const Navbar = () => {
+  const [isDrawerOpen, setDrawerOpen] = useState(false);
+
+  const toggleDrawer = () => {
+    setDrawerOpen(!isDrawerOpen);
+  };
+
   return (
     <AppBar sx={{ position: "sticky", background: "#000726" }}>
       <StyledToolbar>
+        <IconButton
+          color="inherit"
+          aria-label="open drawer"
+          edge="start"
+          onClick={toggleDrawer}
+          sx={{ mr: 2, display: { md: "none" } }}
+        >
+          <MenuIcon />
+        </IconButton>
         <a href="https://machinehack.com/feed">
           <img
             className="logo"
@@ -115,6 +136,20 @@ const Navbar = () => {
           </StyledBase>
         </StyledBase>
       </StyledToolbar>
+      <Drawer
+        anchor="left"
+        open={isDrawerOpen}
+        onClose={toggleDrawer}
+        sx={{
+          "& .MuiDrawer-paper": {
+            width: { xs: "300px", sm: "600px" },
+            backgroundColor: "#1b234a",
+            color: "white",
+          },
+        }}
+      >
+        <MenuItems sx={{ marginTop: 0, marginLeft: 0 }} />
+      </Drawer>
     </AppBar>
   );
 };

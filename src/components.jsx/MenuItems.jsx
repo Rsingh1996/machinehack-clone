@@ -14,7 +14,7 @@ const StyledBase = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  gap: 8,
+  gap: 12,
 }));
 
 const MenuItems = () => {
@@ -25,15 +25,16 @@ const MenuItems = () => {
         backgroundColor: "#1b234a",
         border: 0.5,
         borderStyle: "solid",
-        borderColor: "#263559",
+        borderColor: "#1b234a",
         color: "white",
         flexDirection: "column",
-        borderRadius: 2,
-        marginTop: 2,
-        marginLeft: 4,
+        borderRadius: { md: 2 },
+        marginTop: { md: 2 },
+        marginLeft: { md: 4 },
+        fontWeight: 600,
       }}
     >
-      <List>
+      <List disablePadding>
         {ListItems.map((x) => (
           <ListItem key={x.id} disablePadding>
             <ListItemButton component="a" href="#">
@@ -46,7 +47,7 @@ const MenuItems = () => {
         ))}
       </List>
       <Divider />
-      <List>
+      <List disablePadding>
         <ListItem disablePadding>
           <ListItemButton>
             <StyledBase>

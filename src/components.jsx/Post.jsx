@@ -11,6 +11,7 @@ import {
 } from "@mui/material";
 import PostItems from "./PostItems";
 import styled from "@emotion/styled";
+import "./Header.css";
 
 const CardActionsStatus = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -49,16 +50,24 @@ const Post = () => {
             subheader={x.postedDate}
           />
           <CardContent>
-            <Typography variant="body2" color="white">
+            <Typography className="postContent" variant="body2">
               {x.postContent}
             </Typography>
           </CardContent>
-          <CardMedia
-            // sx={{ maxWidth: 700, maxHeight: 500, objectFit: "contain" }}
-            component="img"
-            src={x.image}
-            alt="hackathon"
-          />
+          {x.image == "" ? (
+            ""
+          ) : (
+            <CardMedia
+              sx={{
+                margin: "auto",
+                maxWidth: { md: 700 },
+                maxHeight: { sm: 400, md: 500 },
+                objectFit: "contain",
+              }}
+              component="img"
+              src={x.image}
+            />
+          )}
           <CardActionsStatus>
             <CardContent>
               {x.like > 0 ? (

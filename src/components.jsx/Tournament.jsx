@@ -1,14 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Button,
-  Divider,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, Button, Divider } from "@mui/material";
 import WifiTetheringIcon from "@mui/icons-material/WifiTethering";
 import TournamentList from "./TournamentList";
 import styled from "@emotion/styled";

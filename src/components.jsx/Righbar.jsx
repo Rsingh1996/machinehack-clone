@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Divider,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import WifiTetheringIcon from "@mui/icons-material/WifiTethering";
 import React from "react";
 import Trendings from "./Trendings";

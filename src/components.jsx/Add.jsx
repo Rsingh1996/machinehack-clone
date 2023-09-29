@@ -62,8 +62,13 @@ const Add = () => {
                 }}
               >
                 <img src={x.icon} alt={x.text} />
-                <Typography sx={{ fontSize: { xs: 10, sm: 16, md: 16 } }}>
-                  {x.text}
+                <Typography
+                  sx={{
+                    fontSize: 14,
+                    fontWeight: { xs: 600 },
+                  }}
+                >
+                  {x.text.slice(0, 6)}
                 </Typography>
               </Button>
             </Box>

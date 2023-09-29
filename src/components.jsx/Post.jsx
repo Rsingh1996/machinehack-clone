@@ -46,11 +46,41 @@ const Post = () => {
                 <img src="https://machinehack.com/static/media/dark-three-dots.4770e886.svg" />
               </IconButton>
             }
-            title={x.author}
-            subheader={x.postedDate}
+            title={
+              <Typography
+                className="postContent"
+                variant="body2"
+                sx={{
+                  fontWeight: 700, // Change font weight
+                  fontSize: "16px", // Change font size
+                }}
+              >
+                {" "}
+                {x.author}
+              </Typography>
+            }
+            subheader={
+              <Typography
+                sx={{
+                  fontWeight: 500,
+                  fontSize: "13px",
+                  color: "#b5c0d3",
+                  fontFamily: "Roboto",
+                }}
+              >
+                {x.postedDate}
+              </Typography>
+            }
           />
           <CardContent>
-            <Typography className="postContent" variant="body2">
+            <Typography
+              className="postContent"
+              variant="body2"
+              sx={{
+                fontWeight: 500,
+                fontSize: "14px",
+              }}
+            >
               {x.postContent}
             </Typography>
           </CardContent>
@@ -83,7 +113,12 @@ const Post = () => {
               {x.share > 0 ? <span> {x.share} shares</span> : ""}
             </CardContent>
           </CardActionsStatus>
-          <CardActions sx={{ display: "flex", justifyContent: "space-evenly" }}>
+          <CardActions
+            sx={{
+              display: "flex",
+              justifyContent: "space-evenly",
+            }}
+          >
             <IconButton aria-label="add to favorites">
               <img src="https://machinehack.com/static/media/thumc_article.dc004a00.svg" />
             </IconButton>

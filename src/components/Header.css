@@ -41,11 +41,3 @@
   color: "white";
   background-color: "#1b234a";
 }
-
-.postContent p {
-  /* width: 300; */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  cursor: pointer;
-}

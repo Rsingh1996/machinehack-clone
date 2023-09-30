@@ -48,11 +48,10 @@ const Post = () => {
             }
             title={
               <Typography
-                className="postContent"
                 variant="body2"
                 sx={{
-                  fontWeight: 700, // Change font weight
-                  fontSize: "16px", // Change font size
+                  fontWeight: 700,
+                  fontSize: "16px",
                 }}
               >
                 {" "}
@@ -74,7 +73,6 @@ const Post = () => {
           />
           <CardContent>
             <Typography
-              className="postContent"
               variant="body2"
               sx={{
                 fontWeight: 500,
@@ -91,7 +89,7 @@ const Post = () => {
               sx={{
                 margin: "auto",
                 maxWidth: { md: 700 },
-                maxHeight: { sm: 400, md: 500 },
+                maxHeight: { sm: 300, md: 400 },
                 objectFit: "contain",
               }}
               component="img"

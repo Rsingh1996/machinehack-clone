@@ -4,8 +4,7 @@ const PostItems = [
     avatar: "https://cdn.machinehack.com/default/M.gif",
     author: "MachineHack Team",
     postedDate: "September 30, 2023",
-    postContent: `MachineHack is an exceptional professional network specifically tailored to empower and showcase the distinct abilities and skills of contemporary generative AI professionals. In addition to its vibrant community, MachineHack offers an extensive array of data-centric challenges and competitions. These engaging opportunities enable generative AI professionals to evaluate and refine their skills while gaining valuable insights from fellow members in the community. By fostering collaboration and knowledge sharing, MachineHack serves as a catalyst for the growth and advancement of generative AI professionals in this rapidly evolving field
-    `,
+    postContent: ``,
     image:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F149695847.v2.pressablecdn.com%2Fwp-content%2Fuploads%2F2022%2F11%2Fimage-19-1-1300x650.png&f=1&nofb=1&ipt=17449af7ba7be76254c5a14a7b7778aa220297f2da01b0c6f41d629cbb29a4d5&ipo=images",
 
@@ -22,14 +21,14 @@ const PostItems = [
     postContent: `Hey everyone! Join in for this enlightening masterclass exploring the intricacies of Deep Learning in Recommendation Systems for Social Media Platforms. With this session, immerse yourself in the dynamic realm of social media advertising, where platforms like Facebook, Snapchat, Pinterest, and others derive the majority of their revenue from precisely targeted ads.
 
     What Awaits You?
-    
-    - Gain profound insights with a comprehensive exploration of the entire advertising funnel and the intricacies of Ads Serving Architecture. 
+
+    - Gain profound insights with a comprehensive exploration of the entire advertising funnel and the intricacies of Ads Serving Architecture.
     - Take a deep dive into the creation of Deep Learning Models designed to deliver highly responsive and personalized advertisements.
     - Discover the real-world challenges faced when creating industrial-scale models and strategies to meet the demands of low-latency ad requests.
-    
-    🗓️: October 6, 2023 
+
+    🗓️: October 6, 2023
     🕒: 6.30 PM to 7.30 PM IST
-    
+
     🎙️ Speaker: Aayush Mudgal | Senior ML Engineer - Pinterest
 
     Register now: https://bit.ly/Oct6Masterclass
@@ -61,7 +60,7 @@ const PostItems = [
     avatar: "https://cdn.machinehack.com/default/S.gif",
     author: "SUMANTA BASAK",
     postedDate: "August 27, 2023",
-    postContent: `Team, despite of file size being less than 10 MB, the system is somehow not accepting any submission. Can you check at your end and confirm? 
+    postContent: `Team, despite of file size being less than 10 MB, the system is somehow not accepting any submission. Can you check at your end and confirm?
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/6088fa1d1cb821ab314e59cb/Machine_Hack__Events__uploaded_at_1693111530011.png",
@@ -75,7 +74,7 @@ const PostItems = [
     avatar: "https://cdn.machinehack.com/default/M.gif",
     author: "Mohal Lal",
     postedDate: "September 29, 2023",
-    postContent: `How to participate as a team for this hackathon? Should each person register independently? 
+    postContent: `How to participate as a team for this hackathon? Should each person register independently?
     `,
     image: "",
 
@@ -107,7 +106,7 @@ const PostItems = [
     postedDate: "September 4, 2023",
     postContent: `Unleash Exclusive Hackathon Superpowers! Get closer to winning $3,500
 
-    Fill out this Google Form with the link to your LinkedIn post: https://forms.gle/QETU3nhQxqNz9p3HA 
+    Fill out this Google Form with the link to your LinkedIn post: https://forms.gle/QETU3nhQxqNz9p3HA
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/6479bbedc0182954740fe1ca/Machine_Hack__Events__uploaded_at_1689071322298.jpeg",
@@ -137,7 +136,7 @@ const PostItems = [
     author: "Sourabh Mehta",
     postedDate: "September 30, 2023",
     postContent: `Language models are AI systems designed to understand and generate human-like text. Rather than providing a direct answer or solution, LLMs follow a logical chain of thoughts, simulating human-like reasoning processes.
-    https://machinehack.com/story/conversational-symphony-decoding-the-chain-of-thoughts-in-llms
+    
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/632830f74467e747f30b46ff/Machine_Hack__Events__uploaded_at_1685420217709.jpeg",

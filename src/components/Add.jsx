@@ -20,8 +20,9 @@ const Add = () => {
         borderStyle: "solid",
         borderColor: "#263559",
         borderRadius: 2,
-        pl: 3,
-        pr: 3,
+        pl: { xs: 2.5, sm: 4, md: 4 },
+        pr: { xs: 2.5, sm: 4, md: 4 },
+        pt: { xs: 1, sm: 2, md: 2 },
         mt: 2,
         mb: 2,
       }}

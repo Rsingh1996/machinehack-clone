@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/machinehack-clone/static/css/main.37235862.css",
-    "main.js": "/machinehack-clone/static/js/main.341f8e02.js",
+    "main.css": "/machinehack-clone/static/css/main.73cc86cb.css",
+    "main.js": "/machinehack-clone/static/js/main.4836140f.js",
     "index.html": "/machinehack-clone/index.html",
-    "main.37235862.css.map": "/machinehack-clone/static/css/main.37235862.css.map",
-    "main.341f8e02.js.map": "/machinehack-clone/static/js/main.341f8e02.js.map"
+    "main.73cc86cb.css.map": "/machinehack-clone/static/css/main.73cc86cb.css.map",
+    "main.4836140f.js.map": "/machinehack-clone/static/js/main.4836140f.js.map"
   },
   "entrypoints": [
-    "static/css/main.37235862.css",
-    "static/js/main.341f8e02.js"
+    "static/css/main.73cc86cb.css",
+    "static/js/main.4836140f.js"
   ]
 }

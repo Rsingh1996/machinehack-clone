@@ -7,11 +7,6 @@ const PostItems = [
     postContent: ``,
     image:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F149695847.v2.pressablecdn.com%2Fwp-content%2Fuploads%2F2022%2F11%2Fimage-19-1-1300x650.png&f=1&nofb=1&ipt=17449af7ba7be76254c5a14a7b7778aa220297f2da01b0c6f41d629cbb29a4d5&ipo=images",
-
-    like: 10,
-    comment: 5,
-    bookmarks: 0,
-    share: 1,
   },
   {
     id: 2,
@@ -35,10 +30,6 @@ const PostItems = [
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/64f9955a1a13360012bc578b/Machine_Hack__Events__uploaded_at_1695646114908.jpeg",
-    like: 1,
-    comment: 2,
-    bookmarks: 0,
-    share: 0,
   },
   {
     id: 3,
@@ -50,11 +41,8 @@ const PostItems = [
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/6502998669256a0019ec0167/Machine_Hack__Events__uploaded_at_1695572862295.png",
-    like: 6,
-    comment: 3,
-    bookmarks: 0,
-    share: 0,
   },
+
   {
     id: 4,
     avatar: "https://cdn.machinehack.com/default/S.gif",
@@ -64,11 +52,8 @@ const PostItems = [
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/6088fa1d1cb821ab314e59cb/Machine_Hack__Events__uploaded_at_1693111530011.png",
-    like: 1,
-    comment: 3,
-    bookmarks: 2,
-    share: 0,
   },
+
   {
     id: 5,
     avatar: "https://cdn.machinehack.com/default/M.gif",
@@ -77,11 +62,6 @@ const PostItems = [
     postContent: `How to participate as a team for this hackathon? Should each person register independently?
     `,
     image: "",
-
-    like: 0,
-    comment: 0,
-    bookmarks: 0,
-    share: 0,
   },
   {
     id: 6,
@@ -93,11 +73,6 @@ const PostItems = [
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/629e02ed97aeb5aeb19b0e6e/Machine_Hack__Events__uploaded_at_1692948970432.png",
-
-    like: 0,
-    comment: 0,
-    bookmarks: 0,
-    share: 0,
   },
   {
     id: 7,
@@ -110,11 +85,6 @@ const PostItems = [
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/6479bbedc0182954740fe1ca/Machine_Hack__Events__uploaded_at_1689071322298.jpeg",
-
-    like: 0,
-    comment: 0,
-    bookmarks: 0,
-    share: 0,
   },
   {
     id: 8,
@@ -124,11 +94,6 @@ const PostItems = [
     postContent: `How should I start learning ML?
     `,
     image: "",
-
-    like: 1,
-    comment: 1,
-    bookmarks: 0,
-    share: 0,
   },
   {
     id: 9,
@@ -140,11 +105,6 @@ const PostItems = [
     `,
     image:
       "https://machinehack-be.s3.ap-south-1.amazonaws.com/feed/632830f74467e747f30b46ff/Machine_Hack__Events__uploaded_at_1685420217709.jpeg",
-
-    like: 5,
-    comment: 3,
-    bookmarks: 0,
-    share: 1,
   },
   {
     id: 10,
@@ -154,11 +114,6 @@ const PostItems = [
     postContent: `What do the negative COTTON AREA and COTTON PRODUCTION values mean in Indian data? Can it be negative?
     `,
     image: "",
-
-    like: 0,
-    comment: 0,
-    bookmarks: 0,
-    share: 0,
   },
   {
     id: 11,
@@ -168,11 +123,6 @@ const PostItems = [
     postContent: `When will the workshop regarding use of vertex ai in the competition take place?What are the dates for the same?Give some idea please.
     `,
     image: "",
-
-    like: 1,
-    comment: 1,
-    bookmarks: 0,
-    share: 0,
   },
   {
     id: 12,
@@ -183,11 +133,6 @@ const PostItems = [
     Anyone, any views on this ?
     `,
     image: "",
-
-    like: 0,
-    comment: 0,
-    bookmarks: 0,
-    share: 0,
   },
 ];
 

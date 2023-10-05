@@ -12,14 +12,48 @@ import {
 import PostItems from "./PostItems";
 import styled from "@emotion/styled";
 import "./Header.css";
+import { useState, useEffect } from "react";
 
-const CardActionsStatus = styled(Box)(({ theme }) => ({
+const ActionsStatus = styled(Box)(({ theme }) => ({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
 }));
 
-const Post = () => {
+const FeedPost = () => {
+  const [likes, setLikes] = useState({});
+  const [comments, setComments] = useState({});
+  const [shares, setShares] = useState({});
+  const [bookmarks, setBookmarks] = useState({});
+
+  const handleLike = (postId) => {
+    setLikes((prevLikes) => ({
+      ...prevLikes,
+      [postId]: (prevLikes[postId] || 0) + 1,
+    }));
+  };
+
+  const handleComment = (postId) => {
+    setComments((prevComments) => ({
+      ...prevComments,
+      [postId]: (prevComments[postId] || 0) + 1,
+    }));
+  };
+
+  const handleShare = (postId) => {
+    setShares((prevShares) => ({
+      ...prevShares,
+      [postId]: (prevShares[postId] || 0) + 1,
+    }));
+  };
+
+  const handleBookmark = (postId) => {
+    setBookmarks((prevBookmarks) => ({
+      ...prevBookmarks,
+      [postId]: (prevBookmarks[postId] || 0) + 1,
+    }));
+  };
+
   return (
     <Box sx={{ mt: 2, mb: 2 }}>
       {PostItems.map((x) => (
@@ -82,7 +116,7 @@ const Post = () => {
               {x.postContent}
             </Typography>
           </CardContent>
-          {x.image == "" ? (
+          {x.image === "" ? (
             ""
           ) : (
             <CardMedia
@@ -96,37 +130,53 @@ const Post = () => {
               src={x.image}
             />
           )}
-          <CardActionsStatus>
+          <ActionsStatus>
             <CardContent>
-              {x.like > 0 ? (
+              {likes[x.id] > 0 ? (
                 <img src="https://machinehack.com/static/media/thumc_article.dc004a00.svg" />
               ) : (
                 ""
               )}
-              {x.like > 0 ? <span> {x.like} Likes</span> : ""}
+              {likes[x.id] > 0 ? <span> {likes[x.id]} Likes</span> : ""}
             </CardContent>
             <CardContent sx={{ display: "flex", gap: 2 }}>
-              {x.comment > 0 ? <span> {x.comment} Comments</span> : ""}
-              {x.bookmarks > 0 ? <span> {x.bookmarks} Bookmarks</span> : ""}
-              {x.share > 0 ? <span> {x.share} shares</span> : ""}
+              {comments[x.id] > 0 ? (
+                <span> {comments[x.id]} Comments</span>
+              ) : (
+                ""
+              )}
+              {bookmarks[x.id] > 0 ? (
+                <span> {bookmarks[x.id]} Bookmarks</span>
+              ) : (
+                ""
+              )}
+              {shares[x.id] > 0 ? <span> {shares[x.id]} shares</span> : ""}
             </CardContent>
-          </CardActionsStatus>
+          </ActionsStatus>
           <CardActions
             sx={{
               display: "flex",
               justifyContent: "space-evenly",
             }}
           >
-            <IconButton aria-label="add to favorites">
+            <IconButton aria-label="like" onClick={() => handleLike(x.id)}>
               <img src="https://machinehack.com/static/media/thumc_article.dc004a00.svg" />
             </IconButton>
-            <IconButton aria-label="share">
+            <IconButton
+              aria-label="comment"
+              onClick={() => handleComment(x.id)}
+            >
               <img src="https://machinehack.com/static/media/comment.b5dc0dc5.svg" />
             </IconButton>
-            <IconButton>
-              <img src="https://machinehack.com/static/media/share.4a5f7130.svg" />
-            </IconButton>
-            <IconButton>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+              <IconButton aria-label="share" onClick={() => handleShare(x.id)}>
+                <img src="https://machinehack.com/static/media/share.4a5f7130.svg" />
+              </IconButton>
+            </a>
+            <IconButton
+              aria-label="bookmark"
+              onClick={() => handleBookmark(x.id)}
+            >
               <img src="https://machinehack.com/static/media/bookmark.d86834e5.svg" />
             </IconButton>
           </CardActions>
@@ -136,4 +186,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default FeedPost;
